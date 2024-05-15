@@ -1,0 +1,246 @@
+
+/* GERAL */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+  background-color: black;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+ion-icon{
+  font-size: large;
+}
+
+h2{
+  margin-top: 60px;
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+}
+
+h2 span{
+  color: rgb(139, 3, 3);
+}
+
+.menu-mobile {
+  display: none;
+}
+
+span{
+  color: rgb(139, 3, 3);
+}
+
+a{
+  text-decoration:none;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+  padding: 40px 20%;
+  background-color: #2929292c;
+}
+
+header .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  color: #9d9d9d;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover{
+  color: #fff;
+  transform: scale(1.0.5);
+}
+
+header nav ul{
+  list-style: none;
+}
+
+header nav.menu-desktop ul li{
+  display: inline-block;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: rgb(139, 3, 3);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+button:hover{
+  box-shadow: 0px 0px 8px rgb(139, 3, 3);
+  transform: scale(1.05);
+}
+
+
+/* ESTILO DO TOPO DO SITE */
+
+
+.topo-site .interface .foto-ozzy-main img{
+  position: relative;
+  left: 500px;
+}
+
+.topo-site{
+  padding: 80px 4%;
+}
+
+.topo-site .seta-baixo{
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+}
+
+.topo-site .seta-baixo ion-icon{
+  position: relative;
+  color: rgb(139, 3, 3);
+  font-size: 50px;
+  animation: flutuar 1s ease-in-out infinite ;
+}
+
+/* MOVIMENTO DA SETA */
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+}
+/* MOVIMENTO DA SETA  */
+
+.topo-site h1{
+  color: #fff;
+  font-size: 48px;
+  margin-top: 30px;
+}
+
+.topo-site h1 span{
+  color: rgb(139, 3, 3);
+}
+
+.topo-site p{
+  color: #fff;
+  margin: 40px 0;
+  width: 500px;
+}
+
+.foto-ozzy-main img{
+  height: 400px;
+  width: 400px;
+  border-radius: 4px;
+  box-shadow: 0 0 40px 10px rgba(139, 3, 3, 0.226);
+  margin-top: 30px;
+}
+
+.sobre-box ion-icon{
+  height: 100px;
+  width: 100px;
+}
+
+
+
+/* ESTILO PREÇOS */
+
+
+
+section .sobre{
+  padding: 40px 4%;
+}
+
+section .sobre .flex{
+  gap: 60px;
+}
+
+.sobre .sobre-box{
+  color: #fff;
+  padding: 40px;
+  width: 400px;
+  height: 600px;
+  margin-top: 100px;
+  border-radius: 20px;
+  transition: .2s;
+}
+
+.sobre .sobre-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff49;
+}
+
+
+.sobre .sobre-box h3{
+  font-size: 26px;
+  margin: 15px 0;
+}
+
+/* FOOTER */
+
+footer .interfase{
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+  margin-top: 100px;
+}
+
+footer .interfase .logo-footer img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+footer .interfase .flex{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes button{
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(139, 3, 3);
+  border-radius:50% ;
+  cursor: pointer;
+  transition: .2s;
+}
+
+footer .interfase button:hover{
+  transform: scale(1.1);
+}
+
